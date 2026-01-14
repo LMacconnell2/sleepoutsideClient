@@ -1,0 +1,7 @@
+Trello Board: https://trello.com/b/SWFm5ipN/theeldendominionsleepsoutside
+Site: https://sleepoutsideclient.netlify.app/
+
+Team: 
+- Yat
+- Hyrum
+- Logan
