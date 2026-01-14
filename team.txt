@@ -4,4 +4,4 @@ Site: https://sleepoutsideclient.netlify.app/
 Team: 
 - Yat
 - Hyrum
-- Logan MacConnell
+- Logan
