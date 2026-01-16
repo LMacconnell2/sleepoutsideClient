@@ -1,12 +1,6 @@
 import { getLocalStorage } from "./utils.mjs";
 import type { Product } from "./types.mjs";
 
-function renderCartContents() {
-  const cartItems = getLocalStorage("so-cart");
-  const htmlItems = cartItems.map((item: Product) => cartItemTemplate(item));
-  const listEl = document.querySelector(".product-list");
-  if (listEl) listEl.innerHTML = htmlItems.join("");
-}
 
 function cartItemTemplate(item: Product) {
   const newItem = `<li class="cart-card divider">
@@ -25,6 +19,13 @@ function cartItemTemplate(item: Product) {
 </li>`;
 
   return newItem;
+}
+
+function renderCartContents() {
+  const cartItems = getLocalStorage("so-cart");
+  const htmlItems = cartItems.map((item: Product) => cartItemTemplate(item));
+  const listEl = document.querySelector(".product-list");
+  if (listEl) listEl.innerHTML = htmlItems.join("");
 }
 
 renderCartContents();
