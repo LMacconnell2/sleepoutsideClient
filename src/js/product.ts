@@ -8,10 +8,9 @@ function addProductToCart(product: Product) {
     cart = getLocalStorage("so-cart") || [];
   }
   catch{
-    console.log("Line 7 throwing error");
+    console.error("Error in saving to LocalStorage");
   }
   
-
   if (!Array.isArray(cart)) {
     throw new Error("Cart is not an array");
   }
